@@ -63,9 +63,9 @@ Describe the resolution of screen you would need to show these side by side as a
 This is not possible to render on any off the shelf screen. On a 4k screen, we can achieve it if we represent the ram in bytes instead, reducing the required size by a factor of 8. Even then, nearly the entire screen would be taken up by the ram.
 ```
 
-![RISC-V Register Example](RISC-V%20Register%20Example.png)
+![RISC-V Register Example](Presentation/Images/RISC-V%20Register%20Example.png)
 
-![RISC-V Register vs 8gb RAM](RISC-V%20Register%20vs%208gb%20RAM.png)
+![RISC-V Register vs 8gb RAM](Presentation/Images/RISC-V%20Register%20vs%208gb%20RAM.png)
 
 ```Practical_Example
 
