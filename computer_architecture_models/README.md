@@ -82,9 +82,9 @@ Describe the resolution of screen you would need to show these side by side as a
 This is not possible to render on any off the shelf screen. On a 4k screen, we can achieve it if we represent the ram in bytes instead, reducing the required size by a factor of 8. Even then, nearly the entire screen would be taken up by the ram.
 ```
 
-![RISC-V Register Example](Presentation/Images/RISC-V%20Register%20Example.png)
+![RISC-V Register Example](presentation/Images/RISC-V%20Register%20Example.png)
 
-![RISC-V Register vs 8gb RAM](Presentation/Images/RISC-V%20Register%20vs%208gb%20RAM.png)
+![RISC-V Register vs 8gb RAM](presentation/Images/RISC-V%20Register%20vs%208gb%20RAM.png)
 
 ```Practical_Example
 
@@ -109,10 +109,12 @@ Introduce Complex Instruction Set Computer (CISC) architecture and Reduced Instr
 
 ### 4. Slide - Hennessy & Patterson Architecture Design Principles
 
-	1. Simplicity favours regularity
-	2. Make the common case fast
-	3. Smaller is faster
-	4. Good design demands good compromises
+>1. Simplicity favours regularity
+>2. Make the common case fast
+>3. Smaller is faster
+>4. Good design demands good compromises
+
+
 ### 5. Demonstration - Complex instructions and higher clock speeds
 
 Learners will race to complete instructions between two signals, the time between them decreasing. The complex instructions will become harder and harder to execute.
@@ -120,15 +122,19 @@ Learners will race to complete instructions between two signals, the time betwee
 ### 6. Quiz - Stomp/Clap
 
 True/False quiz covering lesson content.
+
 ### 7. Extension/Takeaway Activity - Scenarios
 
 Worksheet with some scenarios. Learner should list some considerations to make in selecting/designing a suitable architecture for the use case.
+
 ## Assessment
+
 ### Informal/Formative
 
 - Learner involvement in demonstrations will provide an opportunity to demonstrate understanding.
 - Quiz at the end of the session will cover the main learning objectives.
 - Worksheet from extension/takeaway activity will cover aspirational objective.
+
 ## Resources
 
 ### Essential
