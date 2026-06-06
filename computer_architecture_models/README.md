@@ -31,22 +31,57 @@ e.g. Intel x86, AMD64, Arm64, RISC-V.
 Diagram to show where architecture fits in in relation to other system components:
 
 ```mermaid
+block
+	columns 5
+	A["Software Applications"]
+	space
+	B["Operating System"]
+	space
+	C["Architecture"]
+
+	space space space space space
+
+	F["Digital Circuits"]
+	space
+	E["Logic"]
+	space
+	D["Micro Architecture"]
+
+	space space space space space
+
+	G["Analogue Circuits"]
+	space
+	H["Devices"]
+	space
+	I["Physics"]
+
+	A-->B
+	B-->C
+	C-->D
+	D-->E
+	E-->F
+	F-->G
+	G-->H
+	H-->I
+```
+
+```
 flowchart LR;
 	A[Software Applications] --> B[Operating System];
 	B --> C[Architecture];
 ```
-```mermaid
+```
 flowchart LR;
 	D[Micro Architecture] --> E[Logic];
 	E[Logic] --> F[Digital Circuits];
 ```
-```mermaid
+```
 flowchart LR;
 	G[Analogue Circuits] --> H[Devices];
 	H --> I[Physics];
 ```
 
-Refer to software source code written in **programming languages** that get converted to **assembly languages** specific to the **instruction set**, or directly to the associated **machine code**. 
+Refer to software source code written in **programming languages** that get converted to **assembly languages** specific to the **instruction set**, or directly to the associated **machine code**.
 
 **Machine code** that runs on the physical hardware. Discussions of architecture are focused on the **instruction set**, whereas **microarchitecture** goes into the lower level detail on how the architectures are implemented.
 
@@ -83,10 +118,10 @@ Introduce Complex Instruction Set Computer (CISC) architecture and Reduced Instr
 	- Shorter instructions allow clock speed to be increased.
 
 - How do we think this impacts programmers?
-	- Point out that decades ago, far more programs were directly written in assembly code, so having more complex instruction sets would have made programming more simple. 
+	- Point out that decades ago, far more programs were directly written in assembly code, so having more complex instruction sets would have made programming more simple.
 	- Today, we predominantly work in higher level program languages and compilers and interpreters convert everything to assembly code for us.
 	- Even operating systems are these days are written in higher level programming languages compared to the millions of lines of assembly code of early OS's.
-		Windows is written in C++ with the kernel in C. Linux is a mix of C & C++, and even some Python. The kernel is C with a very small amount written in assembly code. 
+		Windows is written in C++ with the kernel in C. Linux is a mix of C & C++, and even some Python. The kernel is C with a very small amount written in assembly code.
 
 ### 4. Slide - Hennessy & Patterson Architecture Design Principles
 
@@ -114,11 +149,11 @@ Worksheet with some scenarios. Learner should list some considerations to make i
 
 ### Essential
 
-- **Presentation** 
+- **Presentation**
 	For delivery on TV/interactive whiteboard, Open Document Format (.odp),  Open Office XML Presentation (.pptx), or PowerPoint (.ppt)
 - **Instruction cards, timer and calculators**
 	For reduced vs complex instruction card demonstration.
-		Instructions could be mathematical formulas, broken down for RISC, and in full for CISC. 
+		Instructions could be mathematical formulas, broken down for RISC, and in full for CISC.
 			Ordering of the formula should be such that it is difficult to quickly type into a calculator.
 		Timer can be integrated into presentation.
 		Learners can use calculators on phones.
