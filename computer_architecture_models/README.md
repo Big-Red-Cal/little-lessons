@@ -32,28 +32,28 @@ Diagram to show where architecture fits in in relation to other system component
 
 ```mermaid
 block
-	columns 5
-	A["Software Applications"]
+	columns 10
+	A["Software Applications"]:3
 	space
-	B["Operating System"]
+	B["Operating System"]:3
 	space
-	C["Architecture"]
+	C["Architecture"]:3
 
-	space space space space space
+	space:10
 
-	F["Digital Circuits"]
+	F["Digital Circuits"]:3
 	space
-	E["Logic"]
+	E["Logic"]:3
 	space
-	D["Micro Architecture"]
+	D["Micro Architecture"]:3
 
-	space space space space space
+	space:10
 
-	G["Analogue Circuits"]
+	G["Analogue Circuits"]:3
 	space
-	H["Devices"]
+	H["Devices"]:3
 	space
-	I["Physics"]
+	I["Physics"]:3
 
 	A-->B
 	B-->C
@@ -63,22 +63,6 @@ block
 	F-->G
 	G-->H
 	H-->I
-```
-
-```
-flowchart LR;
-	A[Software Applications] --> B[Operating System];
-	B --> C[Architecture];
-```
-```
-flowchart LR;
-	D[Micro Architecture] --> E[Logic];
-	E[Logic] --> F[Digital Circuits];
-```
-```
-flowchart LR;
-	G[Analogue Circuits] --> H[Devices];
-	H --> I[Physics];
 ```
 
 Refer to software source code written in **programming languages** that get converted to **assembly languages** specific to the **instruction set**, or directly to the associated **machine code**.
